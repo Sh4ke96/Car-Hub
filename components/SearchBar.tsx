@@ -50,7 +50,6 @@ const SearchBar = () => {
     }?${searchParams.toString()}`;
     router.push(newPathname, { scroll: false });
   };
-
   return (
     <form className="searchbar" onSubmit={handleSearch}>
       <div className="searchbar__item">
