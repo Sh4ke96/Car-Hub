@@ -41,7 +41,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                   <button
                     type="button"
                     onClick={closeModal}
-                    className="absolute z-10 p-2 rounded-full top-2 right-2 w-fit bg-primary-blue-100"
+                    className="absolute z-10 p-2 rounded-full top-2 right-2 w-fit bg-primary"
                   >
                     <Image
                       src="/close.svg"
@@ -62,7 +62,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                       />
                     </div>
                     <div className="flex gap-3">
-                      <div className="relative flex-1 w-full h-24 rounded-lg bg-primary-blue-100">
+                      <div className="relative flex-1 w-full h-24 rounded-lg bg-primary">
                         <Image
                           src="/hero.png"
                           alt="car model"
@@ -71,7 +71,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                           className="object-contain"
                         />
                       </div>
-                      <div className="relative flex-1 w-full h-24 rounded-lg bg-primary-blue-100">
+                      <div className="relative flex-1 w-full h-24 rounded-lg bg-primary">
                         <Image
                           src="/hero.png"
                           alt="car model"
@@ -80,7 +80,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                           className="object-contain"
                         />
                       </div>
-                      <div className="relative flex-1 w-full h-24 rounded-lg bg-primary-blue-100">
+                      <div className="relative flex-1 w-full h-24 rounded-lg bg-primary">
                         <Image
                           src="/hero.png"
                           alt="car model"
@@ -104,9 +104,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                           <h4 className="capitalize text-grey">
                             {key.split("_").join(" ")}
                           </h4>
-                          <p className="font-semibold text-black-100">
-                            {value}
-                          </p>
+                          <p className="font-semibold text-black">{value}</p>
                         </div>
                       ))}
                     </div>

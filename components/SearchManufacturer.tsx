@@ -54,7 +54,7 @@ const SearchManufacturer = ({
                   key={item}
                   className={({ active }) =>
                     `relative search-manufacturer__option ${
-                      active ? "bg-primary-blue text-white" : "text-gray-900"
+                      active ? "bg-primary text-white" : "text-gray-900"
                     }`
                   }
                 >
@@ -72,9 +72,7 @@ const SearchManufacturer = ({
                       {selected ? (
                         <span
                           className={`absolute inset-y-0 left-0 flex items-center pl-3 ${
-                            active
-                              ? "text-white"
-                              : "text-primary-blue bg-primary-purple"
+                            active ? "text-white" : "text-black bg-primary"
                           }`}
                         ></span>
                       ) : null}
