@@ -6,12 +6,9 @@ const Footer = () => {
       <div className="flex flex-wrap items-center justify-center px-6 py-10 border-t border-gray sm:px-16">
         <Link
           href="/"
-          className="flex items-center justify-center text-4xl font-bold tracking-[0.4rem]"
+          className="flex items-center justify-center text-4xl font-bold tracking-[0.7rem] uppercase"
         >
-          Carent
-          <span className="text-primary">z</span>
-          <span className="text-primary">z</span>
-          <span className="text-primary">z</span>
+          Carentz
         </Link>
         <div className="footer__copyrights-link">
           <Link href="/" className="text-gray-500">

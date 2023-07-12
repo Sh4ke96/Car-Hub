@@ -11,26 +11,28 @@ const Hero = () => {
     }
   };
   return (
-    <div className="hero">
-      <div className="flex-1 pt-36 padding-x">
-        <h1 className="hero__title">
-          Find, book, or rent a car - quickly and easily!
-        </h1>
-        <p className="hero__subtitle">
-          Streamline your car rental experience with our effortless booking
-          process.
-        </p>
-        <Button
-          title="Explore Cars"
-          containerStyles="bg-primary text-black rounded-full mt-10"
-          handleClick={handleScroll}
-        />
-      </div>
-      <div className="hero__image-container">
-        <div className="hero__image">
-          <Image src="/hero.png" alt="hero" className="object-contain" fill />
+    <div className="bg-primary">
+      <div className="relative z-0 flex gap-5 mx-auto max-w-screen-2xl">
+        <div className="flex-1 px-16 pt-80">
+          <h1 className="font-bold leading-[5.5rem] text-7xl">
+            Rent the best car around the world!
+          </h1>
+          <p className="mt-12 text-3xl">
+            Streamline your car rental experience with our effortless booking
+            process.
+          </p>
+          <Button
+            title="Explore Cars"
+            containerStyles="bg-black text-white rounded-full mt-12 duration-300 hover:text-primary"
+            handleClick={handleScroll}
+          />
         </div>
-        <div className="hero__image-overlay" />
+        <div className="hero__image-container">
+          <div className="hero__image">
+            <Image src="/hero.png" alt="hero" className="object-contain" fill />
+          </div>
+          <div className="hero__image-overlay" />
+        </div>
       </div>
     </div>
   );

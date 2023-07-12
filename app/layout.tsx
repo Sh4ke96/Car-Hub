@@ -1,9 +1,12 @@
 import { Footer, Navbar } from "@/components";
 import "./globals.css";
 import type { Metadata } from "next";
+import { Inter } from "@next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Car Hub",
+  title: "Carentz - Rent the best car around the world",
   description: "Discover the best cars in the world.",
 };
 
@@ -13,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.className}>
       <body className="relative">
         <Navbar />
         {children}
