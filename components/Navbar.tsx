@@ -1,12 +1,30 @@
+"use client";
 import Link from "next/link";
-
+import { useEffect, useState } from "react";
+import { FaBars } from "react-icons/fa";
 import Button from "./Button";
 
-import { FaBars } from "react-icons/fa";
-
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      setIsScrolled(scrollTop > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="absolute z-10 w-full">
+    <header
+      className={`${
+        isScrolled ? "sticky top-0 shadow-lg" : ""
+      } transition-all duration-500 ease-in-out z-50 w-full bg-primary`}
+    >
       <nav className="flex items-center justify-between px-6 py-8 mx-auto max-w-screen-2xl sm:px-16">
         <Link
           href="/"
