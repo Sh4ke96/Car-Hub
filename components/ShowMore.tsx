@@ -18,7 +18,7 @@ const ShowMore = ({ pageNumber, isNext }: ShowMoreProps) => {
         <Button
           title="Show More"
           type="button"
-          containerStyles="bg-primary rounded-full text-black"
+          containerStyles="bg-primary rounded-full text-black hover:text-white duration-300"
           handleClick={handleNavigation}
         />
       )}

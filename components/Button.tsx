@@ -1,6 +1,6 @@
 "use client";
 import { ButtonProps } from "@/types";
-import Image from "next/image";
+import { FaArrowRight } from "react-icons/fa";
 
 const Button = ({
   title,
@@ -19,13 +19,8 @@ const Button = ({
     >
       <span className={`flex-1 ${textStyles}`}>{title}</span>
       {rightIcon && (
-        <div className="relative w-6 h-6">
-          <Image
-            src={rightIcon}
-            alt="right arrow icon"
-            fill
-            className="object-contain"
-          />
+        <div className="relative">
+          <FaArrowRight />
         </div>
       )}
     </button>

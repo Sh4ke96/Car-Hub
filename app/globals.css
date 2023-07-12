@@ -82,7 +82,7 @@
 
 /* START: Car Card styles */
 .car-card {
-  @apply flex flex-col items-start justify-center p-6 text-black bg-primary hover:bg-gray hover:shadow-md rounded-3xl;
+  @apply flex flex-col items-start justify-center p-6 text-black duration-300 bg-primary hover:bg-gray hover:shadow-md rounded-3xl;
 }
 
 .car-card__content {
@@ -142,7 +142,7 @@
 
 /* START: Custom Filter styles */
 .custom-filter__btn {
-  @apply relative w-full min-w-[127px] flex justify-between items-center cursor-default rounded-lg bg-white py-2 px-3 text-left shadow-md sm:text-sm border;
+  @apply relative w-full min-w-[127px] flex justify-between items-center cursor-default rounded-full bg-white py-2 px-3 text-left sm:text-sm border-2;
 }
 
 .custom-filter__options {
@@ -186,7 +186,7 @@
 }
 
 .searchbar__item {
-  @apply relative flex items-center justify-start flex-1 max-sm:w-full;
+  @apply relative flex items-center justify-start max-sm:w-full;
 }
 
 .searchbar__input {
@@ -196,7 +196,7 @@
 
 /* START: search manufacturer styles */
 .search-manufacturer {
-  @apply flex items-center justify-start flex-1 max-sm:w-full;
+  @apply flex items-center justify-start max-sm:w-full;
 }
 
 .search-manufacturer__input {

@@ -11,10 +11,10 @@ const Footer = () => {
           Carentz
         </Link>
         <div className="footer__copyrights-link">
-          <Link href="/" className="text-gray-500">
+          <Link href="/" className="duration-300 hover:text-primary">
             Privacy Policy
           </Link>
-          <Link href="/" className="text-gray-500">
+          <Link href="/" className="duration-300 hover:text-primary">
             Terms of Use
           </Link>
         </div>

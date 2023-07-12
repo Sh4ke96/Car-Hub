@@ -1,19 +1,13 @@
 "use client";
 import { useState } from "react";
 import SearchManufacturer from "./SearchManufacturer";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { FaSearch, FaCar } from "react-icons/fa";
 
 const SearchButton = ({ otherClasses }: { otherClasses: string }) => {
   return (
-    <button type="submit" className={`-ml-3 z-10 ${otherClasses}`}>
-      <Image
-        src="/magnifying-glass.svg"
-        alt="magnifying glass"
-        width={40}
-        height={40}
-        className="object-contain"
-      />
+    <button type="submit" className={`-ml-12 z-10 ${otherClasses}`}>
+      <FaSearch className="text-2xl" />
     </button>
   );
 };
@@ -60,20 +54,14 @@ const SearchBar = () => {
         <SearchButton otherClasses="sm:hidden" />
       </div>
       <div className="searchbar__item">
-        <Image
-          src="/model-icon.png"
-          width={25}
-          height={25}
-          className="absolute w-[20px] h-[20px] ml-4"
-          alt="car model"
-        />
+        <FaCar className="absolute w-[20px] h-[20px] ml-8" />
         <input
           type="text"
           name="model"
           value={model}
           onChange={(e) => setModel(e.target.value)}
           placeholder="Tiguan"
-          className="searchbar__input"
+          className="w-full h-12 p-4 pl-16 text-sm border-2 border-black rounded-r-full outline-none cursor-pointer sm:border-t-2 sm:border-l-0 sm:border-b-2 sm:border-r-2 max-sm:rounded-full"
         />
         <SearchButton otherClasses="sm:hidden" />
       </div>

@@ -1,11 +1,13 @@
 "use client";
-import { use, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 
 import { CarProps } from "@/types";
 import Button from "./Button";
 import { calculateCarRent } from "@/utils";
 import CarDetails from "./CarDetails";
+import { GiCarWheel, GiSteeringWheel } from "react-icons/gi";
+import { BsFillFuelPumpFill } from "react-icons/bs";
 
 interface CarCardProps {
   car: CarProps;
@@ -38,24 +40,19 @@ const CarCard = ({ car }: CarCardProps) => {
         <div className="relative flex w-full mt-2">
           <div className="flex justify-between w-full group-hover:invisible text-gray">
             <div className="flex flex-col items-center justify-center gap-2">
-              <Image
-                src="/steering-wheel.svg"
-                alt="steering wheel"
-                width={20}
-                height={20}
-              />
+              <GiSteeringWheel className="text-2xl text-black" />
               <p className="text-[14px] text-black">
                 {transmission === "a" ? "Automatic" : "Manual"}
               </p>
             </div>
             <div className="flex flex-col items-center justify-center gap-2">
-              <Image src="/tire.svg" alt="tire" width={20} height={20} />
+              <GiCarWheel className="text-2xl text-black" />
               <p className="text-[14px] text-black">
                 {drive.toLocaleUpperCase()}
               </p>
             </div>
             <div className="flex flex-col items-center justify-center gap-2">
-              <Image src="/gas.svg" alt="gas" width={20} height={20} />
+              <BsFillFuelPumpFill className="text-2xl text-black" />
               <p className="text-[14px] text-black">{city_mpg} MPG</p>
             </div>
           </div>
