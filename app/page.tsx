@@ -26,7 +26,7 @@ export default async function Home({
   return (
     <main className="overflow-hidden">
       <Hero />
-      <div className="mt-12 padding-x padding-y max-width" id="discover">
+      <div className="px-16 pt-32 pb-8 mt-12 max-width 2xl:px-0" id="discover">
         <div className="home__text-container">
           <h1 className="text-4xl font-extrabold">Car Catalogue</h1>
           <p>Explore the cars you might like</p>
