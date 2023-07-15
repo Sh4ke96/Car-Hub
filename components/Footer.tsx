@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col mt-12 text-black">
+    <footer className="flex flex-col text-black">
       <div className="flex flex-wrap items-center justify-center px-6 py-10 border-t border-gray sm:px-16">
         <Link
           href="/"
@@ -11,10 +11,10 @@ const Footer = () => {
           Carentz
         </Link>
         <div className="footer__copyrights-link">
-          <Link href="/" className="duration-300 hover:text-primary">
+          <Link href="/privacy" className="duration-300 hover:text-primary">
             Privacy Policy
           </Link>
-          <Link href="/" className="duration-300 hover:text-primary">
+          <Link href="/terms" className="duration-300 hover:text-primary">
             Terms of Use
           </Link>
         </div>
