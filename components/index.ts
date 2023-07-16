@@ -9,6 +9,7 @@ import CarCard from "./CarCard";
 import CarDetails from "./CarDetails";
 import ShowMore from "./ShowMore";
 import RegisterForm from "./RegisterForm";
+import LoginForm from "./LoginForm";
 import Input from "./Input";
 
 export {
@@ -23,5 +24,6 @@ export {
   CarDetails,
   ShowMore,
   Input,
+  LoginForm,
   RegisterForm,
 };
