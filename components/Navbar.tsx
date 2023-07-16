@@ -7,6 +7,14 @@ import Button from "./Button";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
+  const handleScroll = () => {
+    const nextSection = document.getElementById("discover");
+
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
@@ -41,7 +49,9 @@ const Navbar = () => {
               <Link href="/">services</Link>
             </li>
             <li className="uppercase duration-300 hover:text-white">
-              <Link href="/">catalogue</Link>
+              <Link href="#" onClick={handleScroll}>
+                catalogue
+              </Link>
             </li>
             <li className="uppercase duration-300 hover:text-white">
               <Link href="/">about us</Link>
